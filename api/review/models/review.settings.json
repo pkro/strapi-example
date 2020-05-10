@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "score": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 0
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}
